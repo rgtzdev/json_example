@@ -21,6 +21,10 @@
 		F49B9AFD19C01BBB0021406B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49B9ADF19C01BBB0021406B /* UIKit.framework */; };
 		F49B9B0519C01BBB0021406B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F49B9B0319C01BBB0021406B /* InfoPlist.strings */; };
 		F49B9B0719C01BBB0021406B /* json_model_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B9B0619C01BBB0021406B /* json_model_exampleTests.m */; };
+		F49B9B1919C10DBD0021406B /* config_file.xml in Resources */ = {isa = PBXBuildFile; fileRef = F49B9B1819C10DBD0021406B /* config_file.xml */; };
+		F49B9B1C19C10F920021406B /* wsDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B9B1B19C10F920021406B /* wsDataHandler.m */; };
+		F49B9B1F19C111410021406B /* WSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B9B1E19C111410021406B /* WSModel.m */; };
+		F49B9B2219C114E20021406B /* WSWebServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F49B9B2119C114E20021406B /* WSWebServiceRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		F49B9B0219C01BBB0021406B /* json_model_exampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "json_model_exampleTests-Info.plist"; sourceTree = "<group>"; };
 		F49B9B0419C01BBB0021406B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F49B9B0619C01BBB0021406B /* json_model_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = json_model_exampleTests.m; sourceTree = "<group>"; };
+		F49B9B1819C10DBD0021406B /* config_file.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config_file.xml; sourceTree = "<group>"; };
+		F49B9B1A19C10F920021406B /* wsDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wsDataHandler.h; path = Link/resources/wsDataHandler.h; sourceTree = "<group>"; };
+		F49B9B1B19C10F920021406B /* wsDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wsDataHandler.m; path = Link/resources/wsDataHandler.m; sourceTree = "<group>"; };
+		F49B9B1D19C111410021406B /* WSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSModel.h; path = Link/WSModel.h; sourceTree = "<group>"; };
+		F49B9B1E19C111410021406B /* WSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSModel.m; path = Link/WSModel.m; sourceTree = "<group>"; };
+		F49B9B2019C114E20021406B /* WSWebServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSWebServiceRequest.h; path = Link/WSWebServiceRequest.h; sourceTree = "<group>"; };
+		F49B9B2119C114E20021406B /* WSWebServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSWebServiceRequest.m; path = Link/WSWebServiceRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,10 @@
 		F49B9AE119C01BBB0021406B /* json_model_example */ = {
 			isa = PBXGroup;
 			children = (
+				F49B9B1519C10C210021406B /* DTO */,
+				F49B9B1419C10C1A0021406B /* Helpers */,
+				F49B9B1319C01E930021406B /* Objects */,
+				F49B9B1219C01E710021406B /* Link */,
 				F49B9AEA19C01BBB0021406B /* wsAppDelegate.h */,
 				F49B9AEB19C01BBB0021406B /* wsAppDelegate.m */,
 				F49B9AED19C01BBB0021406B /* Main.storyboard */,
@@ -150,6 +165,49 @@
 				F49B9B0319C01BBB0021406B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F49B9B1219C01E710021406B /* Link */ = {
+			isa = PBXGroup;
+			children = (
+				F49B9B1719C10C3B0021406B /* resources */,
+				F49B9B1D19C111410021406B /* WSModel.h */,
+				F49B9B1E19C111410021406B /* WSModel.m */,
+				F49B9B2019C114E20021406B /* WSWebServiceRequest.h */,
+				F49B9B2119C114E20021406B /* WSWebServiceRequest.m */,
+			);
+			name = Link;
+			sourceTree = "<group>";
+		};
+		F49B9B1319C01E930021406B /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		F49B9B1419C10C1A0021406B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F49B9B1519C10C210021406B /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DTO;
+			sourceTree = "<group>";
+		};
+		F49B9B1719C10C3B0021406B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F49B9B1819C10DBD0021406B /* config_file.xml */,
+				F49B9B1A19C10F920021406B /* wsDataHandler.h */,
+				F49B9B1B19C10F920021406B /* wsDataHandler.m */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +289,7 @@
 				F49B9AF419C01BBB0021406B /* Images.xcassets in Resources */,
 				F49B9AE619C01BBB0021406B /* InfoPlist.strings in Resources */,
 				F49B9AEF19C01BBB0021406B /* Main.storyboard in Resources */,
+				F49B9B1919C10DBD0021406B /* config_file.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49B9B1F19C111410021406B /* WSModel.m in Sources */,
+				F49B9B1C19C10F920021406B /* wsDataHandler.m in Sources */,
+				F49B9B2219C114E20021406B /* WSWebServiceRequest.m in Sources */,
 				F49B9AEC19C01BBB0021406B /* wsAppDelegate.m in Sources */,
 				F49B9AE819C01BBB0021406B /* main.m in Sources */,
 				F49B9AF219C01BBB0021406B /* wsViewController.m in Sources */,
