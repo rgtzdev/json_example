@@ -7,8 +7,11 @@
 //
 
 #import "wsViewController.h"
+#import "WSWebServiceRequest.h"
 
 @interface wsViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *lPrueba;
+@property (strong, nonatomic) IBOutlet UITextView *tbPrueba;
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tbPrueba.text = [WSWebServiceRequest httpResponse:@"CorteWS.php?action=getAll"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

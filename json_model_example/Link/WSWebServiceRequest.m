@@ -7,6 +7,7 @@
 //
 
 #import "WSWebServiceRequest.h"
+#import "wsDataHandler.h"
 
 @implementation WSWebServiceRequest
 
@@ -16,9 +17,9 @@
  * @params NSURL * url
  * @return NSString - the response lmL
  ***************************************/
--(NSString *) httpResponse:(NSString *) action{
-
-    NSString * urlString = [NSString stringWithFormat:@"%@%@", @"asdfasf", action ];
++(NSString *) httpResponse:(NSString *) petition{
+    
+    NSString * urlString = [NSString stringWithFormat:@"%@%@", [wsDataHandler returnWebServicesRoute], petition ];
     NSURL * fullRequestURL = [[NSURL alloc]initWithString:urlString];
     NSURLRequest * request = [NSURLRequest requestWithURL:fullRequestURL cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30];
     

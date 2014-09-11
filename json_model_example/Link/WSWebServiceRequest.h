@@ -10,6 +10,6 @@
 
 @interface WSWebServiceRequest : NSObject
 
--(NSString *) httpResponse:(NSURL *) url;
++(NSString *) httpResponse:(NSString *) petition;
 
 @end
